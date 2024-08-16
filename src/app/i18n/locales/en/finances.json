@@ -1,0 +1,41 @@
+{
+	"title": "Finances Management",
+	"search": "Search",
+	"admin": "Admin",
+	"balance": "Balance",
+	"addExpenses": "Add expense",
+	"none": "(None)",
+	"revenue": "Revenue",
+	"expense": "Expense",
+	"r": "Rev",
+	"e": "Xps",
+	"addFunds": "Add funds",
+	"paid": "Paid",
+	"not_paid": "Not paid",
+	"table": {
+		"number": "No.",
+		"title": "Title",
+		"content": "Content",
+		"creator": "Creator",
+		"amount": "Amount",
+		"action": "Action",
+		"amount_": "Amount",
+		"receiver": "Receiver",
+		"status": "Status",
+		"money": "Money",
+		"paid": "Paid"
+	},
+	"modal": {
+		"title": "ADD EXPENSE",
+		"confirmAdd": {
+			"title": "Confirm adding",
+			"content": "While you finish adding, you won't be able to update or delete. Do you want to continue?"
+		}
+	},
+	"form": {
+		"title": "Title",
+		"content": "Content",
+		"amount": "Amount",
+		"submit": "Submit"
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "dashboard": "Dashboard",
+  "finances": "Finances Management",
+  "fin": {
+    "overview": "Overview",
+    "re": "Revenue/Expenses",
+    "fund": "Fund",
+    "confund": "Fund Management"
+  },
+  "event": "Event",
+  "usersManagement": "Users Management",
+  "eventManagement": "Events Management",
+  "humanResource": "Human Resources",
+  "memberManagement": "Member Management",
+  "memberList": "Member List",
+  "english": "English",
+  "vietnamese": "Vietnamese",
+  "notifications":"Notification Management",
+  "clubManagement":"Club Management"
+}

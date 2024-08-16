@@ -1,0 +1,41 @@
+trigger:
+- master
+ 
+pool:
+  vmImage: ubuntu-latest
+ 
+variables:
+  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
+ 
+steps:
+- checkout: self
+  fetchDepth: 0
+
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'sonar-cloud'
+    organization: 'nextteam'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'NextTeam_FE2'
+    cliProjectName: 'FE'
+    cliSources: '.'
+- task: vercel-deployment-task@1
+  name: 'Deploy'
+  inputs:
+    condition: or(eq(variables.isMain, true), eq(variables['Build.Reason'], 'PullRequest'))
+    vercelProjectId: $(VERCEL_PROJECT)
+    vercelOrgId: 'team_hBHSOlwUBGisuZ7C89HM6vEc'
+    vercelToken: 'Dfeu38RtNCcfKBYkG2Ih3c9K'
+    production: $(isMain)
+- task: vercel-azdo-pr-comment-task@1
+  inputs:
+    azureToken: $(AZURE_TOKEN)
+    deploymentTaskMessage: $(Deploy.deploymentTaskMessage)
+- task: SonarCloudAnalyze@1
+  inputs:
+    jdkversion: 'JAVA_HOME_17_X64'
+
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'

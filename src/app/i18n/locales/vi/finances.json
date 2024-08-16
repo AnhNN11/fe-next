@@ -1,0 +1,41 @@
+{
+	"title": "Quản lý tài chính",
+	"search": "Tìm kiếm",
+	"admin": "Quản trị viên",
+	"balance": "Số dư",
+	"addExpenses": "Thêm khoản chi",
+	"none": "(Không)",
+	"revenue": "Khoản thu",
+	"expense": "Khoản chi",
+	"r": "Thu",
+	"e": "Chi",
+	"addFunds": "Thêm khoản phí",
+	"paid": "Đã thanh toán",
+	"not_paid": "Chưa thanh toán",
+	"table": {
+		"number": "STT",
+		"title": "Tiêu đề",
+		"content": "Nội dung",
+		"creator": "Người tạo",
+		"amount": "Biến động",
+		"action": "Hành động",
+		"amount_": "Số lượng",
+		"receiver": "Người nhận",
+		"status": "Trạng thái",
+		"money": "Số tiền",
+		"paid": "Đã thanh toán"
+	},
+	"modal": {
+		"title": "THÊM KHOẢN CHI",
+		"confirmAdd": {
+			"title": "Xác nhận thêm",
+			"content": "Khi thêm bạn sẽ không thể chỉnh sửa hay xóa. Bạn có chắc muốn tiếp tục?"
+		}
+	},
+	"form": {
+		"title": "Tiêu đề",
+		"content": "Nội dung",
+		"amount": "Số tiền",
+		"submit": "Hoàn thành"
+	}
+}
